@@ -1,4 +1,5 @@
 
+//This is comment
 /*var lengthOfLongestSubstring = function(s) {
 
     var arr = Array.from(s);
