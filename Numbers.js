@@ -67,9 +67,11 @@ function fibonacci(num) {
 }
 
 function palindrome(str) {
+
     var strArray=Array.from(str);
     var strNewArray=strArray.reverse();
     var newStr = strNewArray.join('');
+
     if(str == newStr)
      {
         console.log("Its Palindrome");
@@ -344,7 +346,7 @@ console.log(mul(2)(3)(4));
 //checkForEquality();
 //primeNumber(9);
 //primeNumber(43);
-//palindrome("123454321");
+palindrome("123454321");
 
 //fibonacci(5);
 
