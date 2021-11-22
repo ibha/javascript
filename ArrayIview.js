@@ -8,7 +8,7 @@ console.log("arrayNum",arrayNum);
 arrayNum[3]=6;
 console.log("arrayNum",arrayNum);
 
-//Double each element by 2 
+//Double each element by 2
 var arrayOrig=[1,2,3];
 arrayOrig.reduce((prev,next,index,arrayOrig)=>
 {
@@ -23,10 +23,11 @@ arrayOfLetters[3]='D';
 arrayOfLetters = []; //breaks the reference and creates new array
 arrayOfLetters[4]='E';
 console.log("anotherArrayOfLetters",anotherArrayOfLetters);
+console.log("arrayOfLetters",arrayOfLetters);
 
 //Unique values of array
 const arrOfNum = [1, 2, 2, 4, 5, 6, 6];
-console.log("getUniqueValues",getUniqueValues(arrOfNum)); 
+console.log("getUniqueValues",getUniqueValues(arrOfNum));
 function getUniqueValues(arrOfNum) {
     const set= new Set(arrOfNum);
     return set;
@@ -69,30 +70,30 @@ function getUniqueValues(arrOfNum) {
           var uniqueNumbers = new Set(duplicateNumbers);
           console.log("uniqueNumbers ",uniqueNumbers);
         }
-        
+
         arr = [ "abc", "xyz", "abcd", "bcd", "abc" ];
         arr.sort();
         console.log("arr ",arr);
         sortedArray = new Set(arr.sort());
         console.log("sortedArray ",sortedArray);
 
-        
+
         function convertNumberToString(num) {
           var strConverted = num.toString();
           console.log(strConverted);
         }
-        
+
         function isArray(arr) {
           console.log("It is array ",arr.constructor === Array);
         }
-        
+
         function duplicate(arr) {
           console.log(arr.concat(arr));
         }
 
 
 
-        
+
         findUniqueNumbers([1,2,2,3,3,4,5,1,2,4]);
         convertNumberToString(234);
         isArray([2,4,3,5,6]);

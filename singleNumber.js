@@ -16,15 +16,9 @@
             newArr.push(key);
         }
     }
-   // let newArr = [...m.entries()].sort((a,b) => b[1]-a[1]).splice(2);
+
     console.log(newArr);
-/*    let newArr = [...m.entries()].filter(([key,value])=>value==1)
-    let convertToObj = Object.fromEntries(newArr);
-    let arr = [];
-    for(obj in convertToObj) {
-        arr.push(Number(obj));
-    }
-return arr;*/
+
 };
 let numbers = [1,2,1,3,2,5];
 findSingleNumbers(numbers);

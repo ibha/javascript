@@ -1,4 +1,4 @@
-//This has multiple Array Operations. 
+//This has multiple Array Operations.
 //The call to functions are disabled at the bottom
 //Uncomment any function call to see its functionality
 
@@ -18,7 +18,7 @@ function numberDivisibleBy() {
         } else if (divisibleByFive == 0) {
             console.log("nnnNumber is divisible by 5");
         }
-    
+
     }
 }
 
@@ -83,7 +83,7 @@ function primeNumber(num) {
         loop = Math.round(num/2);
         for(i=3;i<loop;i++) {
             if(num%i==0) {
-         
+
                 console.log("Not Prime");
                 break;
             } else {
@@ -163,13 +163,13 @@ function reverseString(str) {
 //swap the adjacent elements by comparison
 function bubbleSort(arr) {
     for(n=0;n<arr.length;n++) {
-        for(i=n;i<arr.length;i++) {        
+        for(i=n;i<arr.length;i++) {
             if(arr[i]>arr[i+1]) {//0,1
                 [arr[i],arr[i+1]]= [arr[i+1],arr[i]]; //swap two elements by destructuring
             }
         }
     }
-    
+
     console.log("Sorted Array ",arr);
 }
 
@@ -205,17 +205,17 @@ function swapTwoElementsWithoutTemp(a,b) {
 }
 
 //Set displays unique values
-function setDisplay()  
-{  
-    var set = new Set();    
-    set.add("jQuery");    
-    set.add("AngularJS");    
-    set.add("Bootstrap");  
-    set.add("AngularJS");  
-    for (let elements of set) {    
-    console.log(elements);    
-    }     
-}  
+function setDisplay()
+{
+    var set = new Set();
+    set.add("jQuery");
+    set.add("AngularJS");
+    set.add("Bootstrap");
+    set.add("AngularJS");
+    for (let elements of set) {
+    console.log(elements);
+    }
+}
 
 //binarySearch has tme complexity of O(n log n)
 function binarySearch(arr,num) {
@@ -233,7 +233,7 @@ function binarySearch(arr,num) {
             } else {
                 arr = arr.slice(0,n);
                 console.log("below ",arr);
-            } 
+            }
         }
     }
     console.log("Number not found");
@@ -269,7 +269,7 @@ function mul(num1) {
         return function(num3) {
             return num1*num2*num3;
         }
-    } 
+    }
 }
 
 function createBase(num){
@@ -279,11 +279,11 @@ function createBase(num){
     }
 }
 
-/*emp1 object got company as prototype property. 
+/*emp1 object got company as prototype property.
 delete operator doesn't delete prototype property.
-However, we can delete company property directly from 
-Employee object using delete Employee.company or we can also 
-delete from emp1 object using __proto__ property 
+However, we can delete company property directly from
+Employee object using delete Employee.company or we can also
+delete from emp1 object using __proto__ property
 delete emp1.__proto__.company.*/
 
 var Employee = {
@@ -305,9 +305,9 @@ var output = (function(x) {
     console.log(obj1.name)
     return x;
   })(0);
-  
+
   console.log(output); //0
-  
+
 
 function localScope(){
     var private=3;
@@ -318,7 +318,7 @@ function localScope(){
 scope=localScope()();//localScope() returns inner anonymous function and second () executes it
 //priv=scope.getPrivate();
 console.log(scope);
-console.log(new Boolean(""));
+console.log("Bool ",new Boolean(""));
 
 var addSix = createBase(6);
 addSix(10); // returns 16
@@ -327,13 +327,13 @@ addSix(21); // returns 27
 console.log(mul(2)(3)(4));
 //console.log(multiply(2)(3));
 //console.log(typeof function f(){});
-//setDisplay();  
+//setDisplay();
 //binarySearch([2,4,5,6,8,9,13,15],16);
 //swapTwoElementsWithoutTemp(6,8)
 //insertionSort([6,2,7,4,5]);
 //bubbleSort([6,2,7,4,5]);
 //reverseString("uhsnamiH");
-//armstrongNumber(371);
+armstrongNumber(371);
 //armstrongNumber(153);
 //armstrongNumber(20);
 //convertDays(265);

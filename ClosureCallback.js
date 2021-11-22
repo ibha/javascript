@@ -9,7 +9,7 @@ for (let i = 0; i < 3; i++) {
 }
 for (var j = 0; j < 3; j++) {
   // and now let's run each one to see
-  funcs[j]();
+  funcs[j]()
 }
 
 obj1={
@@ -27,7 +27,7 @@ function test() {
     return function(){
         return dispatchEvent("abc")
     }
-} 
+}
 function dispatchEvent(abc) {
     console.log(abc);
 }
@@ -42,16 +42,16 @@ var arr = [
     {name:"navdeep", age:47},
     ]
 arr1 = arr.filter((data)=>data.age>10);
-console.log("arr ",arr1);    
+console.log("arr ",arr1);
 
 a={food:{veg:"cheese",nonveg:"chicken"}};
-b = Object.assign({},a) 
+b = Object.assign({},a)
 
 //b.food.veg = "pasta"
-console.log(a.food.veg); 
+console.log(a.food.veg);
 
-let dragon = 
-name => 
+let dragon =
+name =>
 size =>
 element=>name + ' is a ' + size + ' dragon '+element+'!';
 
