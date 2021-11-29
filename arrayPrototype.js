@@ -4,4 +4,4 @@ Array.prototype.myUcase = function() {
   }
   console.log(this);
 };
-["Banana", "Orange", "Apple", "Mango"].myUcase();;
+["Banana", "Orange", "Apple", "Mango"].myUcase();
