@@ -22,7 +22,7 @@ class BST {
               return this;
             };
             current = current[side];
-          };
+        };
         while (true) {
             if (val === current.val) return this;
             if (val < current.val) addSide('left');
@@ -30,7 +30,7 @@ class BST {
         }
     }
 
-    //centre,left,right
+    //centre,left,right Traversal
     preOrder() {
         let visited = [],
             current = this.root;
@@ -45,7 +45,7 @@ class BST {
         return visited;
       }
 
-      //left,center,right
+      //left,center,right Traversal
       inOrder() {
         let visited = [],
         current = this.root;

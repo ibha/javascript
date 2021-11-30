@@ -250,7 +250,7 @@ var y = 1;
 if (function f() {}) {
   y += typeof f;
 }
-console.log(y);
+console.log("typeof f ",y);
 
 var k = 1;
 if (1) {
@@ -264,7 +264,7 @@ if (1) {
   function foo() {};
   k += typeof foo;
 }
-//console.log(k);
+console.log(k);
 
 function mul(num1) {
     return function(num2) {
