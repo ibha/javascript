@@ -16,6 +16,7 @@
     
 };
 
+//traverse top, left, bottom, right
 function dfs(image, sr, sc, newColor,origColor) {
     if(image[sr][sc] == origColor) {
         image[sr][sc] = newColor;

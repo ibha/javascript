@@ -44,11 +44,13 @@ var arr = [
 arr1 = arr.filter((data)=>data.age>10);
 console.log("arr ",arr1);
 
-a={food:{veg:"cheese",nonveg:"chicken"}};
+
+a={food:{veg:"cheese",nonveg:"chicken"},test:"abc"};
 b = Object.assign({},a)
 
-//b.food.veg = "pasta"
-console.log(a.food.veg);
+b.food.veg = "pasta"
+b.test = "btest";
+console.log(a);
 
 let dragon =
 name =>

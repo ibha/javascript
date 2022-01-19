@@ -10,3 +10,5 @@ let myPromise = new Promise(function(resolve, reject) {
       function(value) { console.log("code if successful") },
       function(error) { console.log("code if some error")  })
 
+
+    

@@ -6,7 +6,7 @@ function reverseSentence(str) {
         //Convert arr to array of characters, then reverse and then join to make the word back again
         newarrayOfString.push(Array.from(arr).reverse().join(''));
     })
-    console.log(newarrayOfString);
+    console.log(newarrayOfString.reverse());
     
 }
 
